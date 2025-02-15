@@ -1,0 +1,135 @@
+.user {
+  display: flex;
+  width: 400px;
+  height: auto;
+  padding: 0px 0px;
+  margin: 0px auto;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  //zoom: 80%;
+}
+.label {
+  text-align: center;
+  display: block;
+  width: 400px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 28px;
+  margin: auto;
+  }
+input[type=number] {
+  opacity: 1;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 48px;
+  width: 180px;
+  height: 110px;
+  padding: 10px 0px 10px 15px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+  display: block;
+  padding: 25px;
+  width: 100px;
+  height: 60px;
+}
+button {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 32px;
+  border: 4px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  width: 180px;
+  height: 110px;
+  padding: 10px 10px;
+  margin: auto;
+}
+button#healup {
+  font-size: 24px;
+  text-transform: uppercase;
+  height: 80px;
+}
+button:hover {
+  background-color: #dddddd;
+}
+
+#hpbox {
+  width: 450px;
+  margin: auto;
+  background-color: #BBFABF;
+  padding: 15px 0px 5px;
+  border-radius: 15px 15px 0px 0px;
+}
+#mpbox {
+  width: 450px;
+  margin: auto;
+  background-color: #A4CAEB;
+  padding: 15px 0px;
+  border-radius: 15px;
+}
+#dmgbox {
+  width: 450px;
+  margin: auto;
+  background-color: #EBA4A4;
+  padding: 5px 0px 15px;
+  border-radius: 0px 0px 15px 15px;
+}
+#containerleft {
+  height: 600px;
+  width: 300px;
+  padding: 0px;
+  float: left;
+  // background:red;
+}
+#containerright {
+  height: 600px;
+  width: 300px;
+  padding: 0px;
+  float: right;
+
+  // background-color: pink;
+}
+#cropleft, #cropright {
+  display: block;
+  float: left;
+  width: 294px;
+  overflow: hidden;
+  // background-color: blue;
+}
+#parent {
+  width: 588px;
+  height: 600px;
+  // background-color: pink;
+  margin: auto;
+}
+ #parent:before {
+  width: 588px;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("overlay.svg") no-repeat top left;
+  margin: 5px auto;
+  // opacity: .2;
+}
+#rotate {
+  width: 594px;
+  transform: rotate(35deg);
+  margin-bottom: 150px;
+  padding-top: 0px;
+  margin: 0px auto 60px auto;
+  //background-color: grey;
+}

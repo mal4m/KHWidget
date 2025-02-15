@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>KH HP MP Widget</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  Number Input Style -->
+  </head>
+
+  <!-- PAGE LAYOUT -->
+  <div id="rotate">
+    <div id="parent">
+      <div id="cropleft">
+        <div id="containerleft">
+          <canvas id="myChartLeft"></canvas>
+        </div>
+      </div>
+      <div id="cropright">
+        <div id="containerright">
+          <canvas id="myChartRight"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="hpbox">
+    <div class="user">
+      <span class="label">Max HP</span> <span class="label">Current HP</span>
+    </div>
+    <div class="user">
+     <input type="number" id="maxhealthinput" value="10" min="1" /><input type="number" id="healthinput" value="5" min="0" />
+    </div>
+    <div class="user">
+    <button id="healup">Heal Up</button>
+    </div>
+</div>
+<div id="dmgbox">
+     <div class="user">
+      <span class="label">Damage</span> <span class="label"></span>
+     </div>
+     <div class="user">
+      <input type="number" id="damageinput" value="0" min="0" /><button id="hpupdate">Update</button>
+     </div>
+</div>
+<br />
+<div id="mpbox">
+  <div class="user">
+    <span class="label">Max MP</span><span class="label">Current MP</span>
+  </div>
+   <div class="user">
+    <input type="number" id="maxmagicinput" value="4" min="0" /><input type="number" id="magicinput" value="2" min="0" />
+  </div>
+</div>
+  <!-- <div id="user">
+  <button id="updateChart">Update</button>
+</div> -->
+
+  <!-- Script Start -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="data.js"></script>
+</html>
