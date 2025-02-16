@@ -113,6 +113,7 @@ function limit() {
 }
 
 elV.onchange=limit;
+elW.onchange=limit;
 elX.onchange=limit;
 elY.onchange=limit;
 elZ.onchange=limit;
@@ -158,10 +159,6 @@ document.getElementById('healthinput').value = document.getElementById("maxhealt
   console.log("Clicked");
   myChartLeft.update();
 }
-
-
-
-
 
 // Magic Input functionality
 const magicinput = document.getElementById('magicinput');
