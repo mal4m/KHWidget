@@ -53,7 +53,7 @@ var myChartLeft = new Chart(ctx, {
       borderJoinStyle: 'miter',
       borderColor: 'black',
       circumference: 180,
-      cutout: 102,
+      cutout: 103,
               }],
           },
 
@@ -84,7 +84,7 @@ var myChartRight = new Chart(ctx2, {
       borderJoinStyle: 'miter',
       BorderRadius: 0,
       circumference: 180,
-      cutout: 102,
+      cutout: 103,
               }],
           },
       options: {
@@ -103,12 +103,15 @@ var myChartRight = new Chart(ctx2, {
 
 var elX = document.getElementById("maxhealthinput");
 var elY = document.getElementById("healthinput");
+var elZ = document.getElementById("damageinput");
 function limit() {
 	elY.value=Math.min(Math.round(elX.value),elY.value);
+  elZ.value=Math.min(Math.round(elY.value),elZ.value);
 }
 
 elX.onchange=limit;
 elY.onchange=limit;
+elZ.onchange=limit;
 
 // Health Input functionality
 var healthinput = document.getElementById('healthinput');
