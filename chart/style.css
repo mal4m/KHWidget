@@ -10,6 +10,8 @@
 body {
   margin: 0;
   padding: 0;
+  //zoom: 50%;
+  color: #1b2631;
 }
 h2 {
   display: block;
@@ -32,7 +34,26 @@ h2 {
   font-size: 28px;
   margin: auto;
   }
+input[type=text] {
+    outline: none;
+    font-family: "Roboto", serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #1b2631;
+    border: 2px solid #fdfefe;
+    border-radius: 8px;
+    width: 400px;
+    height: 60px;
+    margin: 15px auto;
+    text-align: center;
+    transition: border 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid #85929e;
+}
 input[type=number] {
+  outline: none;
   opacity: 1;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -65,6 +86,7 @@ button {
   height: 110px;
   padding: 10px 10px;
   margin: auto;
+  transition: background-color 0.1s ease-in-out;
 }
 button#healup {
   width: 250px;
@@ -72,6 +94,9 @@ button#healup {
 }
 button:hover {
   background-color: #dddddd;
+}
+button:active {
+  background-color: #ccc;
 }
 #hpbox {
   width: 450px;
