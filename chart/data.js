@@ -142,6 +142,7 @@ function updateHealth(){
 
 // HEAL UP BUTTON
 const healHP = document.getElementById('healup');
+healHP.addEventListener('click', updateHealth);
 healHP.addEventListener('click', fillHP);
 healHP.addEventListener('click', updateHealthChart);
 
