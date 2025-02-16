@@ -5,30 +5,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {zoom:50%;}
-      </style>
-    <!--  Number Input Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   </head>
 
-  <!-- PAGE LAYOUT -->
+<!-- PAGE LAYOUT -->
   <div id="rotate">
+  <div id="parenttop"></div>
     <div id="parent">
       <div id="cropleft">
-        <div id="containerleft">
-          <canvas id="myChartLeft"></canvas>
-        </div>
+        <div id="containerleft"><canvas id="myChartLeft"></canvas></div>
       </div>
       <div id="cropright">
-        <div id="containerright">
-          <canvas id="myChartRight"></canvas>
+        <div id="containerright"><canvas id="myChartRight"></canvas>
         </div>
       </div>
     </div>
+    <div id="parenttop"></div>
   </div>
 
 <div id="hpbox">
@@ -56,12 +48,9 @@
     <span class="label">Max MP</span><span class="label">Current MP</span>
   </div>
    <div class="user">
-    <input type="number" id="maxmagicinput" value="4" min="0" /><input type="number" id="magicinput" value="2" min="0" />
+    <input type="number" id="maxmagicinput" value="4" min="1" /><input type="number" id="magicinput" value="2" min="0" />
   </div>
 </div>
-  <!-- <div id="user">
-  <button id="updateChart">Update</button>
-</div> -->
 
   <!-- Script Start -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
