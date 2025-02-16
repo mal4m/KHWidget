@@ -7,12 +7,23 @@
   vertical-align: middle;
   justify-content: center;
 }
-
 body {
   margin: 0px;
   padding: 0px;
-  //zoom: 50%;
+  zoom: 50%;
 }
+h2 {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", serif;
+  color: #EBA4A4;
+  width: 300px;
+  padding: 10px;
+  margin: 15px auto;
+  border: 4px solid #EBA4A4;
+  border-radius: 8px;
+  
+  }
 .label {
   text-align: center;
   display: block;
@@ -71,7 +82,7 @@ button:hover {
   width: 450px;
   margin: auto;
   background-color: #BBFABF;
-  padding: 15px 0px 5px;
+  padding: 15px 0px 10px;
   border-radius: 15px 15px 0px 0px;
 }
 #mpbox {
