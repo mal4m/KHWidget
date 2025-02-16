@@ -77,9 +77,9 @@ var elX = document.getElementById("maxhealthinput");
 var elY = document.getElementById("healthinput");
 var elZ = document.getElementById("damageinput");
 function limit() {
-  elV.value=Math.min(Math.round(elW.value),elV.value);
-	elY.value=Math.min(Math.round(elX.value),elY.value);
-  elZ.value=Math.min(Math.round(elY.value),elZ.value);
+elV.value=Math.min(Math.round(elW.value),elV.value);
+elY.value=Math.min(Math.round(elX.value),elY.value);
+elZ.value=Math.min(Math.round(elY.value),elZ.value);
 }
 
 elV.onchange=limit;
@@ -97,10 +97,10 @@ maxhealthinput.addEventListener('change', updateHealthChart);
 damageinput.addEventListener('change', updateHealthChart);
 
 function updateHealthChart(){
-  myChartLeft.data.datasets[0].data[1] = damageinput.value;
-  myChartLeft.data.datasets[0].data[0] = healthinput.value - damageinput.value;
-	myChartLeft.data.datasets[0].data[2] = maxhealthinput.value - healthinput.value;
-  myChartLeft.update();
+myChartLeft.data.datasets[0].data[1] = damageinput.value;
+myChartLeft.data.datasets[0].data[0] = healthinput.value - damageinput.value;
+myChartLeft.data.datasets[0].data[2] = maxhealthinput.value - healthinput.value;
+myChartLeft.update();
   }
 
 // DMG UPDATE BUTTON //
@@ -109,9 +109,9 @@ updateHP.addEventListener('click', updateHealth);
 updateHP.addEventListener('click', updateHealthChart);
 
 function updateHealth(){
-	document.getElementById('damageinput').value = '0';
-  document.getElementById('healthinput').value = myChartLeft.data.datasets[0].data[0];
-  myChartLeft.update();
+document.getElementById('damageinput').value = '0';
+document.getElementById('healthinput').value = myChartLeft.data.datasets[0].data[0];
+myChartLeft.update();
 }
 
 // HEAL UP BUTTON
@@ -122,7 +122,7 @@ healHP.addEventListener('click', updateHealthChart);
 
 function fillHP(){
 document.getElementById('healthinput').value = document.getElementById("maxhealthinput").value;
-  myChartLeft.update();
+myChartLeft.update();
 }
 
 // Magic Input functionality
@@ -132,6 +132,6 @@ magicinput.addEventListener('change', updateMagicChart);
 maxmagicinput.addEventListener('change', updateMagicChart);
 
 function updateMagicChart(){
-	myChartRight.data.datasets[0].data[0] = maxmagicinput.value - magicinput.value;
-  myChartRight.data.datasets[0].data[1] = magicinput.value;
-  myChartRight.update();}
+myChartRight.data.datasets[0].data[0] = maxmagicinput.value - magicinput.value;
+myChartRight.data.datasets[0].data[1] = magicinput.value;
+myChartRight.update();}
