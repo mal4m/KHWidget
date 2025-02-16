@@ -12,23 +12,21 @@
     <style>
       body {zoom:50%;}
       </style>
-    <!--  Number Input Style -->
   </head>
-
-  <!-- PAGE LAYOUT -->
+<h2>50% Scale Preview</h2>
+<!-- PAGE LAYOUT -->
   <div id="rotate">
+  <div id="parenttop"></div>
     <div id="parent">
       <div id="cropleft">
-        <div id="containerleft">
-          <canvas id="myChartLeft"></canvas>
-        </div>
+        <div id="containerleft"><canvas id="myChartLeft"></canvas></div>
       </div>
       <div id="cropright">
-        <div id="containerright">
-          <canvas id="myChartRight"></canvas>
+        <div id="containerright"><canvas id="myChartRight"></canvas>
         </div>
       </div>
     </div>
+    <div id="parenttop"></div>
   </div>
 
 <div id="hpbox">
@@ -59,9 +57,6 @@
     <input type="number" id="maxmagicinput" value="4" min="0" /><input type="number" id="magicinput" value="2" min="0" />
   </div>
 </div>
-  <!-- <div id="user">
-  <button id="updateChart">Update</button>
-</div> -->
 
   <!-- Script Start -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
