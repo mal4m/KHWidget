@@ -100,15 +100,19 @@ var myChartRight = new Chart(ctx2, {
       }
 
 });
+var elV = document.getElementById("magicinput");
+var elW = document.getElementById("maxmagicinput");
 
 var elX = document.getElementById("maxhealthinput");
 var elY = document.getElementById("healthinput");
 var elZ = document.getElementById("damageinput");
 function limit() {
+  elV.value=Math.min(Math.round(elW.value),elV.value);
 	elY.value=Math.min(Math.round(elX.value),elY.value);
   elZ.value=Math.min(Math.round(elY.value),elZ.value);
 }
 
+elV.onchange=limit;
 elX.onchange=limit;
 elY.onchange=limit;
 elZ.onchange=limit;
