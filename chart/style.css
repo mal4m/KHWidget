@@ -2,15 +2,14 @@
   display: flex;
   width: 400px;
   height: auto;
-  padding: 0px 0px;
-  margin: 0px auto;
+  padding: 0 0;
+  margin: 0 auto;
   vertical-align: middle;
   justify-content: center;
 }
 body {
-  margin: 0px;
-  padding: 0px;
-  // zoom: 50%;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   display: block;
@@ -42,7 +41,7 @@ input[type=number] {
   font-size: 48px;
   width: 180px;
   height: 110px;
-  padding: 10px 0px 10px 15px;
+  padding: 10px 0 10px 15px;
   margin: 10px;
   background-color: #f8f8f8;
   box-sizing: border-box;
@@ -57,8 +56,8 @@ input[type=number]::-webkit-inner-spin-button {
 button {
   font-family: "Roboto", serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 28px;
   border: 4px solid #ccc;
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -68,65 +67,56 @@ button {
   margin: auto;
 }
 button#healup {
-  //font-weight: 700;
-  //font-size: 24px;
- //text-transform: uppercase;
-   width: 250px;
+  width: 250px;
   height: 80px;
 }
 button:hover {
   background-color: #dddddd;
 }
-
 #hpbox {
   width: 450px;
   margin: auto;
   background-color: #BBFABF;
-  padding: 15px 0px 10px;
-  border-radius: 15px 15px 0px 0px;
+  padding: 15px 0 10px;
+  border-radius: 15px 15px 0 0;
+}
+#dmgbox {
+  width: 450px;
+  margin: auto;
+  background-color: #EBA4A4;
+  padding: 5px 0 15px;
+  border-radius: 0 0 15px 15px;
 }
 #mpbox {
   position: relative;
   width: 450px;
   margin: auto;
   background-color: #A4CAEB;
-  padding: 15px 0px;
+  padding: 15px 0;
   border-radius: 15px;
-}
-#dmgbox {
-  width: 450px;
-  margin: auto;
-  background-color: #EBA4A4;
-  padding: 5px 0px 15px;
-  border-radius: 0px 0px 15px 15px;
 }
 #containerleft {
   height: 600px;
   width: 300px;
-  padding: 0px;
+  padding: 0;
   float: left;
-  //background:red;
 }
 #containerright {
   height: 600px;
   width: 300px;
-  padding: 0px;
+  padding: 0;
   float: right;
-
-  // background-color: pink;
 }
 #cropleft, #cropright {
   display: block;
   float: left;
   width: 295px;
   overflow: hidden;
-  // background-color: blue;
 }
 #parent {
   position: relative;
   width: 590px;
   height: 600px;
-  //background-color: pink;
   margin: auto;
 }
  #parenttop {
@@ -146,9 +136,7 @@ button:hover {
   position: relative;
   width: 594px;
   transform: rotate(35deg);
-  margin-bottom: 150px;
-  padding-top: 0px;
-  margin: 0px auto 60px auto;
-  //background-color: grey;
+  padding-top: 0;
+  margin: 0 auto 60px auto;
   z-index: -10;
 }
