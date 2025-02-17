@@ -120,6 +120,7 @@ button:active {
   padding: 15px 0;
   border-radius: 15px;
 }
+/* CHART VISUALS */
 #containerleft {
   height: 600px;
   width: 300px;
@@ -136,32 +137,49 @@ button:active {
   display: block;
   float: left;
   width: 295px;
+  padding: 0;
   overflow: hidden;
 }
 #parent {
   position: relative;
   width: 590px;
-  height: 600px;
+  height: 650px;
   margin: auto;
+  padding: 0;
 }
  #parenttop {
-  width: 590px;
+  width: 588px;
   height: 600px;
+  padding: 0;
   content: '';
   position: absolute;
-  top: 8px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("https://mal4m.github.io/KHWidget/chart/overlay.svg") no-repeat top center;
-  margin: auto;
-  //opacity: .2;
+  background: url("https://mal4m.github.io/KHWidget/chart/overlay-alt.svg") no-repeat top center;
+  margin: 25px auto;
+}
+#parentbottom {
+  width: 610px;
+  height: 610px;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("https://mal4m.github.io/KHWidget/chart/offset.svg") no-repeat top center;
+  margin: 14px auto;
+  z-index: -10;
+  opacity: .4;
 }
 #rotate {
   position: relative;
+  padding: 20px;
   width: 594px;
   transform: rotate(35deg);
-  padding-top: 0;
+  //padding-top: 0;
   margin: 0 auto 60px auto;
-  z-index: -10;
-}
+  z-index: -5;
+  
