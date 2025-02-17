@@ -143,7 +143,7 @@ button:active {
 #parent {
   position: relative;
   width: 590px;
-  height: 650px;
+  height: 600px;
   margin: auto;
   padding: 0;
 }
@@ -161,8 +161,9 @@ button:active {
   margin: 25px auto;
 }
 #parentbottom {
-  width: 610px;
-  height: 610px;
+  width: 611px;
+  height: 611px;
+  padding: 0;
   position: absolute;
   content: '';
   top: 0;
@@ -170,16 +171,16 @@ button:active {
   bottom: 0;
   left: 0;
   background: url("https://mal4m.github.io/KHWidget/chart/offset.svg") no-repeat top center;
-  margin: 14px auto;
+  margin: 14px auto 0px auto;
   z-index: -10;
-  opacity: .4;
+  opacity: .25;
 }
 #rotate {
   position: relative;
   padding: 20px;
   width: 594px;
+  height: 594px;
   transform: rotate(35deg);
   //padding-top: 0;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 0 auto;
   z-index: -5;
-  
