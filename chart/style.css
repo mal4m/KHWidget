@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  //zoom: 50%;
+  zoom: 50%;
   color: #1b2631;
 }
 h2 {
@@ -23,7 +23,29 @@ h2 {
   margin: 15px auto;
   border: 4px solid #EBA4A4;
   border-radius: 8px;
-  
+  }
+h3 {
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+  font-family: "Roboto", serif;
+  font-size: 28px;
+  width: 200px;
+  height: 35px;
+  padding: 20px;
+  margin: 20px 10px;
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.1s ease-in-out;
+  }
+  h3:hover{
+   background-color: #dddddd;
+  }
+ #footer {
+    display: flex;
+    height: 100px;
+    width: 500px;
+    margin: auto;
   }
 .label {
   text-align: center;
@@ -87,6 +109,10 @@ button {
   padding: 10px 10px;
   margin: auto;
   transition: background-color 0.1s ease-in-out;
+}
+button.foot{
+    width: 275px;
+    margin: 10px;
 }
 button#healup {
   width: 250px;
